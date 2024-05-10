@@ -5,43 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table id="cal">
-        <tr>
-            <td colspan="3">
-                <input class="display-box" type="text" id="result" disabled/>
-            </td>
-            <td><input type="button" value="c" onclick="clR()" id="btn" /></td>
-        </tr>
 
-        <tr>
-            <td><input type="button" value="1" onclick="dis('1')"/></td>
-            <td><input type="button" value="2" onclick="dis('2')"/></td>
-            <td><input type="button" value="3" onclick="dis('3')"/></td>
-            <td><input type="button" value="/" onclick="dis('/')"/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="4" onclick="dis('4')"/></td>
-            <td><input type="button" value="5" onclick="dis('5')"/></td>
-            <td><input type="button" value="6" onclick="dis('6')"/></td>
-            <td><input type="button" value="-" onclick="dis('-')"/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="7" onclick="dis('7')"/></td>
-            <td><input type="button" value="8" onclick="dis('8')"/></td>
-            <td><input type="button" value="9" onclick="dis('9')"/></td>
-            <td><input type="button" value="+" onclick="dis('+')"/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="." onclick="dis('.')"/></td>
-            <td><input type="button" value="0" onclick="dis('0')"/></td>
+    <div class="cAl">
+        <table id="cal">
+            <tr>
+                <td colspan="3">
+                    <input class="display-box" type="text" id="result" disabled/>
+                </td>
+                <td><input type="button" value="c" onclick="clR()" id="btn" /></td>
+            </tr>
+    
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')"/></td>
+                <td><input type="button" value="2" onclick="dis('2')"/></td>
+                <td><input type="button" value="3" onclick="dis('3')"/></td>
+                <td><input type="button" value="/" onclick="dis('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')"/></td>
+                <td><input type="button" value="5" onclick="dis('5')"/></td>
+                <td><input type="button" value="6" onclick="dis('6')"/></td>
+                <td><input type="button" value="-" onclick="dis('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="dis('7')"/></td>
+                <td><input type="button" value="8" onclick="dis('8')"/></td>
+                <td><input type="button" value="9" onclick="dis('9')"/></td>
+                <td><input type="button" value="+" onclick="dis('+')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="dis('.')"/></td>
+                <td><input type="button" value="0" onclick="dis('0')"/></td>
+    
+    
+                <td><input type="button" value="=" onclick="caL()" id="btn"/></td>
+                <td><input type="button" value="*" onclick="dis('*')"/></td>
+            </tr>
+        </table>
+    </div>
 
-
-            <td><input type="button" value="=" onclick="caL()" id="btn"/></td>
-            <td><input type="button" value="*" onclick="dis('*')"/></td>
-        </tr>
-    </table>
+    <div class="teX">
+        <h1>@ calculator </h1>
+    </div>
+    
 
     <script src="index.js"></script>
 </body>
